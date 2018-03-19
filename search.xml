@@ -1,59 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-    
-    <entry>
-      <title>Hexo教程</title>
-      <link href="/2018/03/19/Hexo%E6%95%99%E7%A8%8B/"/>
-      <content type="html"><![CDATA[<p>hahahahahahahahahahaha</p>]]></content>
-      
+<search>
+  <entry>
+    <title><![CDATA[Hexo教程]]></title>
+    <url>%2F2018%2F03%2F19%2FHexo%E6%95%99%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[hahahahahahahahahahaha]]></content>
       <categories>
-          
-          <category> hexo </category>
-          
+        <category>hexo</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-            <tag> github </tag>
-            
-            <tag> npm </tag>
-            
-            <tag> 基础 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>你好，hexo</title>
-      <link href="/2018/03/18/%E4%BD%A0%E5%A5%BD%EF%BC%8Chexo/"/>
-      <content type="html"><![CDATA[<p>使用hexo,是非常简单的一件事，测试文本</p>]]></content>
-      
+      <tags>
+        <tag>hexo</tag>
+        <tag>github</tag>
+        <tag>npm</tag>
+        <tag>基础</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[你好，hexo]]></title>
+    <url>%2F2018%2F03%2F18%2F%E4%BD%A0%E5%A5%BD%EF%BC%8Chexo%2F</url>
+    <content type="text"><![CDATA[使用hexo,是非常简单的一件事，测试文本]]></content>
       <categories>
-          
-          <category> 搭建博客 </category>
-          
+        <category>搭建博客</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-            <tag> github </tag>
-            
-            <tag> npm </tag>
-            
-            <tag> 基础 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-  
-  
+      <tags>
+        <tag>hexo</tag>
+        <tag>github</tag>
+        <tag>npm</tag>
+        <tag>基础</tag>
+      </tags>
+  </entry>
 </search>
