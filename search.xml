@@ -1,39 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title><![CDATA[Django]]></title>
-    <url>%2F2018%2F03%2F18%2FDjango%E6%A1%86%E6%9E%B6%2F</url>
-    <content type="text"><![CDATA[Django是一个由Python编写的具有完整架站能力的开源Web框架。使用Django，只要很少的代码，Python的程序开发人员就可以轻松地完成一个正式网站所需要的大部分内容，并进一步开发出全功能的Web服务。 Django本身基于MVC模型，即Model（模型）+View（视图）+ Controller（控制器）设计模式，因此天然具有MVC的出色基因：开发快捷、部署方便、可重用性高、维护成本低等。Python加Django是快速开发、设计、部署网站的最佳组合。 Django诞生于2003年，2006年加入了BSD许可证，成为开源的Web框架。Django这一词语是根据比利时的爵士音乐家Django Reinhardt命名的，有希望Django能够优雅地演奏（开发）各种乐曲（Web应用）的美好含义。 Django是由美国堪萨斯（Kansas）州Lawrence城中的一个新闻开发小组开发出来的。当时Lawrence Journal-World报纸的程序员Adrian Holovaty和Simon Willison用 Python 编写Web新闻应用，他们的 World Online小组制作并维护了当地的几个新闻站点。新闻界独有的特点是快速迭代，从开发到上线，通常只有几天或几个小时的时间。为了能在截止时间前完成工作，Adrian和Simon打算开发一种通用的高效的网络应用开发框架，也就是Django。 2005年的夏天，当这个框架开发完成时，它已经用来制作了很多个World Online的站点。不久，小组中的Jacob Kaplan-Moss决定把这个框架发布为一个开源软件，于是短短数年，Django项目就有着数以万计的用户和贡献者，在世界范围内广泛传播。 原来的World Online的两个开发者（Adrian and Jacob）仍然掌握着Django，但是其发展方向受社区团队的影响更大。 Django具有以下特点： 功能完善、要素齐全：该有的、可以没有的都有，常用的、不常用的工具都用。Django提供了大量的特性和工具，无须你自己定义、组合、增删及修改。但是，在有些人眼里这被认为是‘臃肿’不够灵活，发挥不了程序员的主动能力。（一体机和DIY你更喜欢哪个？^-^）完善的文档：经过十多年的发展和完善，Django有广泛的实践经验和完善的在线文档（可惜大多数为英文）。开发者遇到问题时可以搜索在线文档寻求解决方案。强大的数据库访问组件：Django的Model层自带数据库ORM组件，使得开发者无须学习其他数据库访问技术（SQL、pymysql、SQLALchemy等）。当然你也可以不用Django自带的ORM，而是使用其它访问技术，比如SQLALchemy。灵活的URL映射：Django使用正则表达式管理URL映射，灵活性高。丰富的Template模板语言：类似jinjia模板语言，不但原生功能丰富，还可以自定义模板标签。自带免费的后台管理系统：只需要通过简单的几行配置和代码就可以实现一个完整的后台数据管理控制平台。完整的错误信息提示：在开发调试过程中如果出现运行错误或者异常，Django可以提供非常完整的错误信息帮助定位问题。]]></content>
+<search> 
+  
+    
+    <entry>
+      <title>Django</title>
+      <link href="/2018/03/18/Django%E6%A1%86%E6%9E%B6/"/>
+      <content type="html"><![CDATA[<p>Django是一个由Python编写的具有完整架站能力的开源Web框架。使用Django，只要很少的代码，Python的程序开发人员就可以轻松地完成一个正式网站所需要的大部分内容，并进一步开发出全功能的Web服务。</p><p>Django本身基于MVC模型，即Model（模型）+View（视图）+ Controller（控制器）设计模式，因此天然具有MVC的出色基因：开发快捷、部署方便、可重用性高、维护成本低等。Python加Django是快速开发、设计、部署网站的最佳组合。</p><p>Django诞生于2003年，2006年加入了BSD许可证，成为开源的Web框架。Django这一词语是根据比利时的爵士音乐家Django Reinhardt命名的，有希望Django能够优雅地演奏（开发）各种乐曲（Web应用）的美好含义。</p><p>Django是由美国堪萨斯（Kansas）州Lawrence城中的一个新闻开发小组开发出来的。当时Lawrence Journal-World报纸的程序员Adrian Holovaty和Simon Willison用 Python 编写Web新闻应用，他们的 World Online小组制作并维护了当地的几个新闻站点。新闻界独有的特点是快速迭代，从开发到上线，通常只有几天或几个小时的时间。为了能在截止时间前完成工作，Adrian和Simon打算开发一种通用的高效的网络应用开发框架，也就是Django。</p><p>2005年的夏天，当这个框架开发完成时，它已经用来制作了很多个World Online的站点。不久，小组中的Jacob Kaplan-Moss决定把这个框架发布为一个开源软件，于是短短数年，Django项目就有着数以万计的用户和贡献者，在世界范围内广泛传播。 原来的World Online的两个开发者（Adrian and Jacob）仍然掌握着Django，但是其发展方向受社区团队的影响更大。</p><p>Django具有以下特点：</p><p>功能完善、要素齐全：该有的、可以没有的都有，常用的、不常用的工具都用。Django提供了大量的特性和工具，无须你自己定义、组合、增删及修改。但是，在有些人眼里这被认为是‘臃肿’不够灵活，发挥不了程序员的主动能力。（一体机和DIY你更喜欢哪个？^-^）<br>完善的文档：经过十多年的发展和完善，Django有广泛的实践经验和完善的在线文档（可惜大多数为英文）。开发者遇到问题时可以搜索在线文档寻求解决方案。<br>强大的数据库访问组件：Django的Model层自带数据库ORM组件，使得开发者无须学习其他数据库访问技术（SQL、pymysql、SQLALchemy等）。当然你也可以不用Django自带的ORM，而是使用其它访问技术，比如SQLALchemy。<br>灵活的URL映射：Django使用正则表达式管理URL映射，灵活性高。<br>丰富的Template模板语言：类似jinjia模板语言，不但原生功能丰富，还可以自定义模板标签。<br>自带免费的后台管理系统：只需要通过简单的几行配置和代码就可以实现一个完整的后台数据管理控制平台。<br>完整的错误信息提示：在开发调试过程中如果出现运行错误或者异常，Django可以提供非常完整的错误信息帮助定位问题。</p><p><img src="img/1.png"></p>]]></content>
+      
       <categories>
-        <category>Django</category>
+          
+          <category> Django </category>
+          
       </categories>
-      <tags>
-        <tag>基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[MVC及MTV设计模式]]></title>
-    <url>%2F2018%2F03%2F18%2FMVC%E5%8F%8AMTV%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%2F</url>
-    <content type="text"><![CDATA[在目前基于Python语言的几十个Web开发框架中，几乎所有的全栈框架都强制或引导开发者使用MVC设计模式。所谓全栈框架，是指除了封装网络和线程操作，还提供HTTP、数据库读写管理、HTML模板引擎等一系列功能的Web框架，比如Django、Tornado和Flask。 MVC设计模式： 最早由Trygve Teenskaug在1978年提出，上世纪80年代是程序语言Smalltalk的一种内部架构。后来MVC被其他领域借鉴，成为了软件工程中的一种软件架构模式。MVC把Web框架分为3个基础部分： 模型(Model)：用于封装与应用程序的业务逻辑相关的数据及对数据的处理方法，是Web应用程序中用于处理应用程序的数据逻辑的部分，Model只提供功能性的接口，通过这些接口可以获取Model的所有功能。白话说，这个模块就是Web框架和数据库的交互层。 视图(View)：负责数据的显示和呈现，是对用户的直接输出。 控制器(Controller)：负责从用户端收集用户的输入，可以看成提供View的反向功能。 这三个部分互相独立，但又相互联系，使得改进和升级界面及用户交互流程，在Web开发过程任务分配时，不需要重写业务逻辑及数据访问代码。 MVC在Python之外的语言中也有广泛应用，例如VC++的MFC，Java的Structs及Spring、C#的.NET开发框架，都非常有名。 MTV设计模式： Django对传统的MVC设计模式进行了修改，将视图分成View模块和Template模块两部分，将动态的逻辑处理与静态的页面展现分离开。而Model采用了ORM技术，将关系型数据库表抽象成面向对象的Python类，将表操作转换成类操作，避免了复杂的SQL语句编写。MTV和MVC本质上是一样的。 模型(Model)：和MVC中的定义一样 模板(Template)：将数据与HTML语言结合起来的引擎 视图(View)：负责实际的业务逻辑实现]]></content>
+      
+      
+        <tags>
+            
+            <tag> 基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>MVC及MTV设计模式</title>
+      <link href="/2018/03/18/MVC%E5%8F%8AMTV%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+      <content type="html"><![CDATA[<p>在目前基于Python语言的几十个Web开发框架中，几乎所有的全栈框架都强制或引导开发者使用MVC设计模式。所谓全栈框架，是指除了封装网络和线程操作，还提供HTTP、数据库读写管理、HTML模板引擎等一系列功能的Web框架，比如Django、Tornado和Flask。</p><p>MVC设计模式：</p><p>最早由Trygve Teenskaug在1978年提出，上世纪80年代是程序语言Smalltalk的一种内部架构。后来MVC被其他领域借鉴，成为了软件工程中的一种软件架构模式。MVC把Web框架分为3个基础部分：</p><p>模型(Model)：用于封装与应用程序的业务逻辑相关的数据及对数据的处理方法，是Web应用程序中用于处理应用程序的数据逻辑的部分，Model只提供功能性的接口，通过这些接口可以获取Model的所有功能。白话说，这个模块就是Web框架和数据库的交互层。</p><p>视图(View)：负责数据的显示和呈现，是对用户的直接输出。</p><p>控制器(Controller)：负责从用户端收集用户的输入，可以看成提供View的反向功能。</p><p>这三个部分互相独立，但又相互联系，使得改进和升级界面及用户交互流程，在Web开发过程任务分配时，不需要重写业务逻辑及数据访问代码。</p><p>MVC在Python之外的语言中也有广泛应用，例如VC++的MFC，Java的Structs及Spring、C#的.NET开发框架，都非常有名。</p><p>MTV设计模式：</p><p>Django对传统的MVC设计模式进行了修改，将视图分成View模块和Template模块两部分，将动态的逻辑处理与静态的页面展现分离开。而Model采用了ORM技术，将关系型数据库表抽象成面向对象的Python类，将表操作转换成类操作，避免了复杂的SQL语句编写。MTV和MVC本质上是一样的。</p><p>模型(Model)：和MVC中的定义一样</p><p>模板(Template)：将数据与HTML语言结合起来的引擎</p><p>视图(View)：负责实际的业务逻辑实现</p>]]></content>
+      
       <categories>
-        <category>Django</category>
+          
+          <category> Django </category>
+          
       </categories>
-      <tags>
-        <tag>基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[你好，hexo]]></title>
-    <url>%2F2018%2F03%2F18%2F%E4%BD%A0%E5%A5%BD%EF%BC%8Chexo%2F</url>
-    <content type="text"><![CDATA[使用hexo,是非常简单的一件事，测试文本]]></content>
+      
+      
+        <tags>
+            
+            <tag> 基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>你好，hexo</title>
+      <link href="/2018/03/18/%E4%BD%A0%E5%A5%BD%EF%BC%8Chexo/"/>
+      <content type="html"><![CDATA[<p>使用hexo,是非常简单的一件事，测试文本</p>]]></content>
+      
       <categories>
-        <category>搭建博客</category>
+          
+          <category> 搭建博客 </category>
+          
       </categories>
-      <tags>
-        <tag>基础</tag>
-        <tag>hexo</tag>
-        <tag>github</tag>
-        <tag>npm</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> 基础 </tag>
+            
+            <tag> hexo </tag>
+            
+            <tag> github </tag>
+            
+            <tag> npm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+  
+  
 </search>
