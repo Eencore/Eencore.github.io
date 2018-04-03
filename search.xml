@@ -1,94 +1,213 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title><![CDATA[你好，hexo]]></title>
-    <url>%2F2018%2F03%2F18%2F%E4%BD%A0%E5%A5%BD%EF%BC%8Chexo%2F</url>
-    <content type="text"><![CDATA[使用hexo,是非常简单的一件事，测试文本]]></content>
+<search> 
+  
+    
+    <entry>
+      <title>MVC及MTV设计模式</title>
+      <link href="/2018/03/18/MVC%E5%8F%8AMTV%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+      <content type="html"><![CDATA[<p>在目前基于Python语言的几十个Web开发框架中，几乎所有的全栈框架都强制或引导开发者使用MVC设计模式。所谓全栈框架，是指除了封装网络和线程操作，还提供HTTP、数据库读写管理、HTML模板引擎等一系列功能的Web框架，比如Django、Tornado和Flask。</p><p>MVC设计模式：</p><p>最早由Trygve Teenskaug在1978年提出，上世纪80年代是程序语言Smalltalk的一种内部架构。后来MVC被其他领域借鉴，成为了软件工程中的一种软件架构模式。MVC把Web框架分为3个基础部分：</p><p>模型(Model)：用于封装与应用程序的业务逻辑相关的数据及对数据的处理方法，是Web应用程序中用于处理应用程序的数据逻辑的部分，Model只提供功能性的接口，通过这些接口可以获取Model的所有功能。白话说，这个模块就是Web框架和数据库的交互层。</p><p>视图(View)：负责数据的显示和呈现，是对用户的直接输出。</p><p>控制器(Controller)：负责从用户端收集用户的输入，可以看成提供View的反向功能。</p><p>这三个部分互相独立，但又相互联系，使得改进和升级界面及用户交互流程，在Web开发过程任务分配时，不需要重写业务逻辑及数据访问代码。</p><p>MVC在Python之外的语言中也有广泛应用，例如VC++的MFC，Java的Structs及Spring、C#的.NET开发框架，都非常有名。</p><p>MTV设计模式：</p><p>Django对传统的MVC设计模式进行了修改，将视图分成View模块和Template模块两部分，将动态的逻辑处理与静态的页面展现分离开。而Model采用了ORM技术，将关系型数据库表抽象成面向对象的Python类，将表操作转换成类操作，避免了复杂的SQL语句编写。MTV和MVC本质上是一样的。</p><p>模型(Model)：和MVC中的定义一样</p><p>模板(Template)：将数据与HTML语言结合起来的引擎</p><p>视图(View)：负责实际的业务逻辑实现<br><img src="/img/1.png" alt=""></p>]]></content>
+      
       <categories>
-        <category>搭建博客</category>
+          
+          <category> Django </category>
+          
       </categories>
-      <tags>
-        <tag>基础</tag>
-        <tag>hexo</tag>
-        <tag>github</tag>
-        <tag>npm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Django]]></title>
-    <url>%2F2018%2F03%2F18%2FDjango%E6%A1%86%E6%9E%B6%2F</url>
-    <content type="text"><![CDATA[Django是一个由Python编写的具有完整架站能力的开源Web框架。使用Django，只要很少的代码，Python的程序开发人员就可以轻松地完成一个正式网站所需要的大部分内容，并进一步开发出全功能的Web服务。 Django本身基于MVC模型，即Model（模型）+View（视图）+ Controller（控制器）设计模式，因此天然具有MVC的出色基因：开发快捷、部署方便、可重用性高、维护成本低等。Python加Django是快速开发、设计、部署网站的最佳组合。 Django诞生于2003年，2006年加入了BSD许可证，成为开源的Web框架。Django这一词语是根据比利时的爵士音乐家Django Reinhardt命名的，有希望Django能够优雅地演奏（开发）各种乐曲（Web应用）的美好含义。 Django是由美国堪萨斯（Kansas）州Lawrence城中的一个新闻开发小组开发出来的。当时Lawrence Journal-World报纸的程序员Adrian Holovaty和Simon Willison用 Python 编写Web新闻应用，他们的 World Online小组制作并维护了当地的几个新闻站点。新闻界独有的特点是快速迭代，从开发到上线，通常只有几天或几个小时的时间。为了能在截止时间前完成工作，Adrian和Simon打算开发一种通用的高效的网络应用开发框架，也就是Django。 2005年的夏天，当这个框架开发完成时，它已经用来制作了很多个World Online的站点。不久，小组中的Jacob Kaplan-Moss决定把这个框架发布为一个开源软件，于是短短数年，Django项目就有着数以万计的用户和贡献者，在世界范围内广泛传播。 原来的World Online的两个开发者（Adrian and Jacob）仍然掌握着Django，但是其发展方向受社区团队的影响更大。 Django具有以下特点： 功能完善、要素齐全：该有的、可以没有的都有，常用的、不常用的工具都用。Django提供了大量的特性和工具，无须你自己定义、组合、增删及修改。但是，在有些人眼里这被认为是‘臃肿’不够灵活，发挥不了程序员的主动能力。（一体机和DIY你更喜欢哪个？^-^）完善的文档：经过十多年的发展和完善，Django有广泛的实践经验和完善的在线文档（可惜大多数为英文）。开发者遇到问题时可以搜索在线文档寻求解决方案。强大的数据库访问组件：Django的Model层自带数据库ORM组件，使得开发者无须学习其他数据库访问技术（SQL、pymysql、SQLALchemy等）。当然你也可以不用Django自带的ORM，而是使用其它访问技术，比如SQLALchemy。灵活的URL映射：Django使用正则表达式管理URL映射，灵活性高。丰富的Template模板语言：类似jinjia模板语言，不但原生功能丰富，还可以自定义模板标签。自带免费的后台管理系统：只需要通过简单的几行配置和代码就可以实现一个完整的后台数据管理控制平台。完整的错误信息提示：在开发调试过程中如果出现运行错误或者异常，Django可以提供非常完整的错误信息帮助定位问题。]]></content>
+      
+      
+        <tags>
+            
+            <tag> 基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Django</title>
+      <link href="/2018/03/18/Django%E6%A1%86%E6%9E%B6/"/>
+      <content type="html"><![CDATA[<p>Django是一个由Python编写的具有完整架站能力的开源Web框架。使用Django，只要很少的代码，Python的程序开发人员就可以轻松地完成一个正式网站所需要的大部分内容，并进一步开发出全功能的Web服务。</p><p>Django本身基于MVC模型，即Model（模型）+View（视图）+ Controller（控制器）设计模式，因此天然具有MVC的出色基因：开发快捷、部署方便、可重用性高、维护成本低等。Python加Django是快速开发、设计、部署网站的最佳组合。</p><p>Django诞生于2003年，2006年加入了BSD许可证，成为开源的Web框架。Django这一词语是根据比利时的爵士音乐家Django Reinhardt命名的，有希望Django能够优雅地演奏（开发）各种乐曲（Web应用）的美好含义。</p><p>Django是由美国堪萨斯（Kansas）州Lawrence城中的一个新闻开发小组开发出来的。当时Lawrence Journal-World报纸的程序员Adrian Holovaty和Simon Willison用 Python 编写Web新闻应用，他们的 World Online小组制作并维护了当地的几个新闻站点。新闻界独有的特点是快速迭代，从开发到上线，通常只有几天或几个小时的时间。为了能在截止时间前完成工作，Adrian和Simon打算开发一种通用的高效的网络应用开发框架，也就是Django。</p><p>2005年的夏天，当这个框架开发完成时，它已经用来制作了很多个World Online的站点。不久，小组中的Jacob Kaplan-Moss决定把这个框架发布为一个开源软件，于是短短数年，Django项目就有着数以万计的用户和贡献者，在世界范围内广泛传播。 原来的World Online的两个开发者（Adrian and Jacob）仍然掌握着Django，但是其发展方向受社区团队的影响更大。</p><p>Django具有以下特点：<br><img src="/img/1.png" alt=""></p><p>功能完善、要素齐全：该有的、可以没有的都有，常用的、不常用的工具都用。Django提供了大量的特性和工具，无须你自己定义、组合、增删及修改。但是，在有些人眼里这被认为是‘臃肿’不够灵活，发挥不了程序员的主动能力。（一体机和DIY你更喜欢哪个？^-^）<br>完善的文档：经过十多年的发展和完善，Django有广泛的实践经验和完善的在线文档（可惜大多数为英文）。开发者遇到问题时可以搜索在线文档寻求解决方案。<br>强大的数据库访问组件：Django的Model层自带数据库ORM组件，使得开发者无须学习其他数据库访问技术（SQL、pymysql、SQLALchemy等）。当然你也可以不用Django自带的ORM，而是使用其它访问技术，比如SQLALchemy。<br>灵活的URL映射：Django使用正则表达式管理URL映射，灵活性高。<br>丰富的Template模板语言：类似jinjia模板语言，不但原生功能丰富，还可以自定义模板标签。<br>自带免费的后台管理系统：只需要通过简单的几行配置和代码就可以实现一个完整的后台数据管理控制平台。<br>完整的错误信息提示：在开发调试过程中如果出现运行错误或者异常，Django可以提供非常完整的错误信息帮助定位问题。</p><p><img src="/img/1.png" alt=""></p>]]></content>
+      
       <categories>
-        <category>Django</category>
+          
+          <category> Django </category>
+          
       </categories>
-      <tags>
-        <tag>基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[MVC及MTV设计模式]]></title>
-    <url>%2F2018%2F03%2F18%2FMVC%E5%8F%8AMTV%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%2F</url>
-    <content type="text"><![CDATA[在目前基于Python语言的几十个Web开发框架中，几乎所有的全栈框架都强制或引导开发者使用MVC设计模式。所谓全栈框架，是指除了封装网络和线程操作，还提供HTTP、数据库读写管理、HTML模板引擎等一系列功能的Web框架，比如Django、Tornado和Flask。 MVC设计模式： 最早由Trygve Teenskaug在1978年提出，上世纪80年代是程序语言Smalltalk的一种内部架构。后来MVC被其他领域借鉴，成为了软件工程中的一种软件架构模式。MVC把Web框架分为3个基础部分： 模型(Model)：用于封装与应用程序的业务逻辑相关的数据及对数据的处理方法，是Web应用程序中用于处理应用程序的数据逻辑的部分，Model只提供功能性的接口，通过这些接口可以获取Model的所有功能。白话说，这个模块就是Web框架和数据库的交互层。 视图(View)：负责数据的显示和呈现，是对用户的直接输出。 控制器(Controller)：负责从用户端收集用户的输入，可以看成提供View的反向功能。 这三个部分互相独立，但又相互联系，使得改进和升级界面及用户交互流程，在Web开发过程任务分配时，不需要重写业务逻辑及数据访问代码。 MVC在Python之外的语言中也有广泛应用，例如VC++的MFC，Java的Structs及Spring、C#的.NET开发框架，都非常有名。 MTV设计模式： Django对传统的MVC设计模式进行了修改，将视图分成View模块和Template模块两部分，将动态的逻辑处理与静态的页面展现分离开。而Model采用了ORM技术，将关系型数据库表抽象成面向对象的Python类，将表操作转换成类操作，避免了复杂的SQL语句编写。MTV和MVC本质上是一样的。 模型(Model)：和MVC中的定义一样 模板(Template)：将数据与HTML语言结合起来的引擎 视图(View)：负责实际的业务逻辑实现]]></content>
+      
+      
+        <tags>
+            
+            <tag> 基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>切片和迭代</title>
+      <link href="/2016/12/11/%E5%88%87%E7%89%87%E5%92%8C%E8%BF%AD%E4%BB%A3/"/>
+      <content type="html"><![CDATA[<p>切片：<br>取一个list或tuple的部分元素是非常常见的操作。比如，一个list如下：</p><blockquote><blockquote><blockquote><p>L = [‘Michael’, ‘Sarah’, ‘Tracy’, ‘Bob’, ‘Jack’]<br>取前3个元素，应该怎么做？</p></blockquote></blockquote></blockquote><p>笨办法：</p><blockquote><blockquote><blockquote><p>[L[0], L[1], L[2]]<br>[‘Michael’, ‘Sarah’, ‘Tracy’]<br>之所以是笨办法是因为扩展一下，取前N个元素就没辙了。</p></blockquote></blockquote></blockquote><p>取前N个元素，也就是索引为0-(N-1)的元素，可以用循环：</p><blockquote><blockquote><blockquote><p>r = []<br>n = 3<br>for i in range(n):<br>…     r.append(L[i])<br>…<br>r<br>[‘Michael’, ‘Sarah’, ‘Tracy’]<br>对这种经常取指定索引范围的操作，用循环十分繁琐，因此，Python提供了切片（Slice）操作符，能大大简化这种操作。</p></blockquote></blockquote></blockquote><p>对应上面的问题，取前3个元素，用一行代码就可以完成切片：</p><blockquote><blockquote><blockquote><p>L[0:3]<br>[‘Michael’, ‘Sarah’, ‘Tracy’]<br>L[0:3]表示，从索引0开始取，直到索引3为止，但不包括索引3。即索引0，1，2，正好是3个元素。</p></blockquote></blockquote></blockquote><p>如果第一个索引是0，还可以省略：</p><blockquote><blockquote><blockquote><p>L[:3]<br>[‘Michael’, ‘Sarah’, ‘Tracy’]<br>也可以从索引1开始，取出2个元素出来：</p></blockquote></blockquote></blockquote><blockquote><blockquote><blockquote><p>L[1:3]<br>[‘Sarah’, ‘Tracy’]<br>类似的，既然Python支持L[-1]取倒数第一个元素，那么它同样支持倒数切片，试试：</p></blockquote></blockquote></blockquote><blockquote><blockquote><blockquote><p>L[-2:]<br>[‘Bob’, ‘Jack’]<br>L[-2:-1]<br>[‘Bob’]<br>记住倒数第一个元素的索引是-1。</p></blockquote></blockquote></blockquote><p>切片操作十分有用。我们先创建一个0-99的数列：</p><blockquote><blockquote><blockquote><p>L = list(range(100))<br>L<br>[0, 1, 2, 3, …, 99]<br>可以通过切片轻松取出某一段数列。比如前10个数：</p></blockquote></blockquote></blockquote><blockquote><blockquote><blockquote><p>L[:10]<br>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]<br>后10个数：</p></blockquote></blockquote></blockquote><blockquote><blockquote><blockquote><p>L[-10:]<br>[90, 91, 92, 93, 94, 95, 96, 97, 98, 99]<br>前11-20个数：</p></blockquote></blockquote></blockquote><blockquote><blockquote><blockquote><p>L[10:20]<br>[10, 11, 12, 13, 14, 15, 16, 17, 18, 19]<br>前10个数，每两个取一个：</p></blockquote></blockquote></blockquote><blockquote><blockquote><blockquote><p>L[:10:2]<br>[0, 2, 4, 6, 8]<br>所有数，每5个取一个：</p></blockquote></blockquote></blockquote><blockquote><blockquote><blockquote><p>L[::5]<br>[0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95]<br>甚至什么都不写，只写[:]就可以原样复制一个list：</p></blockquote></blockquote></blockquote><blockquote><blockquote><blockquote><p>L[:]<br>[0, 1, 2, 3, …, 99]<br>tuple也是一种list，唯一区别是tuple不可变。因此，tuple也可以用切片操作，只是操作的结果仍是tuple：</p></blockquote></blockquote></blockquote><blockquote><blockquote><blockquote><p>(0, 1, 2, 3, 4, 5)[:3]<br>(0, 1, 2)<br>字符串’xxx’也可以看成是一种list，每个元素就是一个字符。因此，字符串也可以用切片操作，只是操作结果仍是字符串：</p></blockquote></blockquote></blockquote><blockquote><blockquote><blockquote><p>‘ABCDEFG’[:3]<br>‘ABC’<br>‘ABCDEFG’[::2]<br>‘ACEG’<br>在很多编程语言中，针对字符串提供了很多各种截取函数（例如，substring），其实目的就是对字符串切片。Python没有针对字符串的截取函数，只需要切片一个操作就可以完成，非常简单。</p></blockquote></blockquote></blockquote><p>迭代：<br>如果给定一个list或tuple，我们可以通过for循环来遍历这个list或tuple，这种遍历我们称为迭代（Iteration）。</p><p>在Python中，迭代是通过for … in来完成的，而很多语言比如C语言，迭代list是通过下标完成的，比如Java代码：</p><p>for (i=0; i&lt;list.length; i++) {<br>    n = list[i];<br>}<br>可以看出，Python的for循环抽象程度要高于C的for循环，因为Python的for循环不仅可以用在list或tuple上，还可以作用在其他可迭代对象上。</p><p>list这种数据类型虽然有下标，但很多其他数据类型是没有下标的，但是，只要是可迭代对象，无论有无下标，都可以迭代，比如dict就可以迭代：</p><blockquote><blockquote><blockquote><p>d = {‘a’: 1, ‘b’: 2, ‘c’: 3}<br>for key in d:<br>…     print(key)<br>…<br>a<br>c<br>b<br>因为dict的存储不是按照list的方式顺序排列，所以，迭代出的结果顺序很可能不一样。</p></blockquote></blockquote></blockquote><p>默认情况下，dict迭代的是key。如果要迭代value，可以用for value in d.values()，如果要同时迭代key和value，可以用for k, v in d.items()。</p><p>由于字符串也是可迭代对象，因此，也可以作用于for循环：</p><blockquote><blockquote><blockquote><p>for ch in ‘ABC’:<br>…     print(ch)<br>…<br>A<br>B<br>C<br>所以，当我们使用for循环时，只要作用于一个可迭代对象，for循环就可以正常运行，而我们不太关心该对象究竟是list还是其他数据类型。</p></blockquote></blockquote></blockquote><p>那么，如何判断一个对象是可迭代对象呢？方法是通过collections模块的Iterable类型判断：</p><blockquote><blockquote><blockquote><p>from collections import Iterable<br>isinstance(‘abc’, Iterable) # str是否可迭代<br>True<br>isinstance([1,2,3], Iterable) # list是否可迭代<br>True<br>isinstance(123, Iterable) # 整数是否可迭代<br>False<br>最后一个小问题，如果要对list实现类似Java那样的下标循环怎么办？Python内置的enumerate函数可以把一个list变成索引-元素对，这样就可以在for循环中同时迭代索引和元素本身：</p></blockquote></blockquote></blockquote><blockquote><blockquote><blockquote><p>for i, value in enumerate([‘A’, ‘B’, ‘C’]):<br>…     print(i, value)<br>…<br>0 A<br>1 B<br>2 C<br>上面的for循环里，同时引用了两个变量，在Python里是很常见的，比如下面的代码：</p></blockquote></blockquote></blockquote><blockquote><blockquote><blockquote><p>for x, y in [(1, 1), (2, 4), (3, 9)]:<br>…     print(x, y)<br>…<br>1 1<br>2 4<br>3 9</p></blockquote></blockquote></blockquote>]]></content>
+      
       <categories>
-        <category>Django</category>
+          
+          <category> Python </category>
+          
       </categories>
-      <tags>
-        <tag>基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Python数据类型和变量]]></title>
-    <url>%2F2016%2F11%2F10%2FPython%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%8F%98%E9%87%8F%2F</url>
-    <content type="text"><![CDATA[数据类型计算机顾名思义就是可以做数学计算的机器，因此，计算机程序理所当然地可以处理各种数值。但是，计算机能处理的远不止数值，还可以处理文本、图形、音频、视频、网页等各种各样的数据，不同的数据，需要定义不同的数据类型。在Python中，能够直接处理的数据类型有以下几种：整数Python可以处理任意大小的整数，当然包括负整数，在程序中的表示方法和数学上的写法一模一样，例如：1，100，-8080，0，等等。计算机由于使用二进制，所以，有时候用十六进制表示整数比较方便，十六进制用0x前缀和0-9，a-f表示，例如：0xff00，0xa5b4c3d2，等等。 浮点数浮点数也就是小数，之所以称为浮点数，是因为按照科学记数法表示时，一个浮点数的小数点位置是可变的，比如，1.23x109和12.3x108是完全相等的。浮点数可以用数学写法，如1.23，3.14，-9.01，等等。但是对于很大或很小的浮点数，就必须用科学计数法表示，把10用e替代，1.23x109就是1.23e9，或者12.3e8，0.000012可以写成1.2e-5，等等。整数和浮点数在计算机内部存储的方式是不同的，整数运算永远是精确的（除法难道也是精确的？是的！），而浮点数运算则可能会有四舍五入的误差。 字符串字符串是以单引号’或双引号”括起来的任意文本，比如’abc’，”xyz”等等。请注意，’’或””本身只是一种表示方式，不是字符串的一部分，因此，字符串’abc’只有a，b，c这3个字符。如果’本身也是一个字符，那就可以用””括起来，比如”I’m OK”包含的字符是I，’，m，空格，O，K这6个字符。如果字符串内部既包含’又包含”怎么办？可以用转义字符\来标识，比如：‘I\’m \”OK\”!’表示的字符串内容是：I’m “OK”!转义字符\可以转义很多字符，比如\n表示换行，\t表示制表符，字符\本身也要转义，所以\表示的字符就是\，可以在Python的交互式命令行用print()打印字符串看看： print(‘I\’m ok.’)I’m ok.print(‘I\’m learning\nPython.’)I’m learningPython.print(‘\\n\‘)\如果字符串里面有很多字符都需要转义，就需要加很多\，为了简化，Python还允许用r’’表示’’内部的字符串默认不转义，可以自己试试：print(‘\\t\‘)\ \print(r’\\t\‘)\\t\如果字符串内部有很多换行，用\n写在一行里不好阅读，为了简化，Python允许用’’’…’’’的格式表示多行内容，可以自己试试：print(‘’’line1… line2… line3’’’)line1line2line3上面是在交互式命令行内输入，注意在输入多行内容时，提示符由&gt;&gt;&gt;变为…，提示你可以接着上一行输入，注意…是提示符，不是代码的一部分： 当输入完结束符`和括号)后，执行该语句并打印结果。│Command Prompt - python _ □ x │├────────────────────────────────────────────────────────┤│&gt;&gt;&gt; print(‘’’line1 ││… line2 ││… line3’’’) ││line1 ││line2 ││line3 ││ ││&gt;&gt;&gt; _ ││ 如果写成程序并存为.py文件，就是：print(‘’’line1line2line3’’’) 布尔值 布尔值和布尔代数的表示完全一致，一个布尔值只有True、False两种值，要么是True，要么是False，在Python中，可以直接用True、False表示布尔值（请注意大小写），也可以通过布尔运算计算出来： TrueTrueFalseFalse3 &gt; 2True3 &gt; 5False 布尔值可以用and、or和not运算。and运算是与运算，只有所有都为True，and运算结果才是True： True and TrueTrueTrue and FalseFalseFalse and FalseFalse5 &gt; 3 and 3 &gt; 1True or运算是或运算，只要其中有一个为True，or运算结果就是True： True or TrueTrueTrue or FalseTrueFalse or FalseFalse5 &gt; 3 or 1 &gt; 3Truenot运算是非运算，它是一个单目运算符，把True变成False，False变成True：not TrueFalsenot FalseTruenot 1 &gt; 2True布尔值经常用在条件判断中，比如：if age &gt;= 18: print(‘adult’)else: print(‘teenager’) 空值 空值是Python里一个特殊的值，用None表示。None不能理解为0，因为0是有意义的，而None是一个特殊的空值。此外，Python还提供了列表、字典等多种数据类型，还允许创建自定义数据类型，我们后面会继续讲到。 变量 变量的概念基本上和初中代数的方程变量是一致的，只是在计算机程序中，变量不仅可以是数字，还可以是任意数据类型。变量在程序中就是用一个变量名表示了，变量名必须是大小写英文、数字和_的组合，且不能用数字开头，比如：a = 1变量a是一个整数。t_007 = ‘T007’变量t_007是一个字符串。Answer = True变量Answer是一个布尔值True。]]></content>
+      
+      
+        <tags>
+            
+            <tag> 基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>列表生成器</title>
+      <link href="/2016/12/10/%E5%88%97%E8%A1%A8%E7%94%9F%E6%88%90%E5%99%A8/"/>
+      <content type="html"><![CDATA[<p>列表生成式即List Comprehensions，是Python内置的非常简单却强大的可以用来创建list的生成式。</p><p>举个例子，要生成list [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]可以用list(range(1, 11))：</p><blockquote><blockquote><blockquote><p>list(range(1, 11))<br>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]<br>但如果要生成[1x1, 2x2, 3x3, …, 10x10]怎么做？方法一是循环：</p></blockquote></blockquote></blockquote><blockquote><blockquote><blockquote><p>L = []<br>for x in range(1, 11):<br>…    L.append(x * x)<br>…<br>L<br>[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]<br>但是循环太繁琐，而列表生成式则可以用一行语句代替循环生成上面的list：</p></blockquote></blockquote></blockquote><blockquote><blockquote><blockquote><p>[x <em> x for x in range(1, 11)]<br>[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]<br>写列表生成式时，把要生成的元素x </em> x放到前面，后面跟for循环，就可以把list创建出来，十分有用，多写几次，很快就可以熟悉这种语法。</p></blockquote></blockquote></blockquote><p>for循环后面还可以加上if判断，这样我们就可以筛选出仅偶数的平方：</p><blockquote><blockquote><blockquote><p>[x * x for x in range(1, 11) if x % 2 == 0]<br>[4, 16, 36, 64, 100]<br>还可以使用两层循环，可以生成全排列：</p></blockquote></blockquote></blockquote><blockquote><blockquote><blockquote><p>[m + n for m in ‘ABC’ for n in ‘XYZ’]<br>[‘AX’, ‘AY’, ‘AZ’, ‘BX’, ‘BY’, ‘BZ’, ‘CX’, ‘CY’, ‘CZ’]<br>三层和三层以上的循环就很少用到了。</p></blockquote></blockquote></blockquote><p>运用列表生成式，可以写出非常简洁的代码。例如，列出当前目录下的所有文件和目录名，可以通过一行代码实现：</p><blockquote><blockquote><blockquote><p>import os # 导入os模块，模块的概念后面讲到<br>[d for d in os.listdir(‘.’)] # os.listdir可以列出文件和目录<br>[‘.emacs.d’, ‘.ssh’, ‘.Trash’, ‘Adlm’, ‘Applications’, ‘Desktop’, ‘Documents’, ‘Downloads’, ‘Library’, ‘Movies’, ‘Music’, ‘Pictures’, ‘Public’, ‘VirtualBox VMs’, ‘Workspace’, ‘XCode’]<br>for循环其实可以同时使用两个甚至多个变量，比如dict的items()可以同时迭代key和value：</p></blockquote></blockquote></blockquote><blockquote><blockquote><blockquote><p>d = {‘x’: ‘A’, ‘y’: ‘B’, ‘z’: ‘C’ }<br>for k, v in d.items():<br>…     print(k, ‘=’, v)<br>…<br>y = B<br>x = A<br>z = C<br>因此，列表生成式也可以使用两个变量来生成list：</p></blockquote></blockquote></blockquote><blockquote><blockquote><blockquote><p>d = {‘x’: ‘A’, ‘y’: ‘B’, ‘z’: ‘C’ }<br>[k + ‘=’ + v for k, v in d.items()]<br>[‘y=B’, ‘x=A’, ‘z=C’]<br>最后把一个list中所有的字符串变成小写：</p></blockquote></blockquote></blockquote><blockquote><blockquote><blockquote><p>L = [‘Hello’, ‘World’, ‘IBM’, ‘Apple’]<br>[s.lower() for s in L]<br>[‘hello’, ‘world’, ‘ibm’, ‘apple’]</p></blockquote></blockquote></blockquote>]]></content>
+      
       <categories>
-        <category>Python</category>
+          
+          <category> Python </category>
+          
       </categories>
-      <tags>
-        <tag>基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Python基础]]></title>
-    <url>%2F2016%2F11%2F09%2FPython%E5%9F%BA%E7%A1%80%2F</url>
-    <content type="text"><![CDATA[python简介：Python是一种计算机程序设计语言。你可能已经听说过很多种流行的编程语言，比如非常难学的C语言，非常流行的Java语言，适合初学者的Basic语言，适合网页编程的JavaScript语言等等。那Python是一种什么语言？首先，我们普及一下编程语言的基础知识。用任何编程语言来开发程序，都是为了让计算机干活，比如下载一个MP3，编写一个文档等等，而计算机干活的CPU只认识机器指令，所以，尽管不同的编程语言差异极大，最后都得“翻译”成CPU可以执行的机器指令。而不同的编程语言，干同一个活，编写的代码量，差距也很大。比如，完成同一个任务，C语言要写1000行代码，Java只需要写100行，而Python可能只要20行。所以Python是一种相当高级的语言。你也许会问，代码少还不好？代码少的代价是运行速度慢，C程序运行1秒钟，Java程序可能需要2秒，而Python程序可能就需要10秒。那是不是越低级的程序越难学，越高级的程序越简单？表面上来说，是的，但是，在非常高的抽象计算中，高级的Python程序设计也是非常难学的，所以，高级程序语言不等于简单。但是，对于初学者和完成普通任务，Python语言是非常简单易用的。连Google都在大规模使用Python，你就不用担心学了会没用。用Python可以做什么？可以做日常任务，比如自动备份你的MP3；可以做网站，很多著名的网站包括YouTube就是Python写的；可以做网络游戏的后台，很多在线游戏的后台都是Python开发的。总之就是能干很多很多事啦。 安装python： 因为Python是跨平台的，它可以运行在Windows、Mac和各种Linux/Unix系统上。在Windows上写Python程序，放到Linux上也是能够运行的。要开始学习Python编程，首先就得把Python安装到你的电脑里。安装后，你会得到Python解释器（就是负责运行Python程序的），一个命令行交互环境，还有一个简单的集成开发环境。安装Python 3.6目前，Python有两个版本，一个是2.x版，一个是3.x版，这两个版本是不兼容的。由于3.x版越来越普及，我们的教程将以最新的Python 3.6版本为基础。请确保你的电脑上安装的Python版本是最新的3.6.x，这样，你才能无痛学习这个教程。在Linux上安装Python 如果你正在使用Linux，那我可以假定你有Linux系统管理经验，自行安装Python 3应该没有问题，否则，请换回Windows系统。对于大量的目前仍在使用Windows的同学，如果短期内没有打算换Mac，就可以继续阅读以下内容。 在Mac上安装Python如果你正在使用Mac，系统是OS X 10.8~10.10，那么系统自带的Python版本是2.7。要安装最新的Python 3.6，有两个方法：方法一：从Python官网下载Python 3.6的安装程序（网速慢的同学请移步国内镜像），双击运行并安装；方法二：如果安装了Homebrew，直接通过命令brew install python3安装即可。 在Windows上安装Python 首先，根据你的Windows版本（64位还是32位）从Python的官方网站下载Python 3.6对应的64位安装程序或32位安装程序（网速慢的同学请移步国内镜像），然后，运行下载的EXE安装包：特别要注意勾上Add Python 3.6 to PATH，然后点“Install Now”即可完成安装。运行Python安装成功后，打开命令提示符窗口，敲入python后，会出现两种情况：情况一：看到上面的画面，就说明Python安装成功！你看到提示符&gt;&gt;&gt;就表示我们已经在Python交互式环境中了，可以输入任何Python代码，回车后会立刻得到执行结果。现在，输入exit()并回车，就可以退出Python交互式环境（直接关掉命令行窗口也可以）。情况二：得到一个错误：‘python’ 不是内部或外部命令，也不是可运行的程序或批处理文件。这是因为Windows会根据一个Path的环境变量设定的路径去查找python.exe，如果没找到，就会报错。如果在安装时漏掉了勾选Add Python 3.6 to PATH，那就要手动把python.exe所在的路径添加到Path中。如果你不知道怎么修改环境变量，建议把Python安装程序重新运行一遍，务必记得勾上Add Python 3.6 to PATH。 小结 学会如何把Python安装到计算机中，并且熟练打开和退出Python交互式环境。 在Windows上运行Python时，请先启动命令行，然后运行python。 在Mac和Linux上运行Python时，请打开终端，然后运行python3。]]></content>
+      
+      
+        <tags>
+            
+            <tag> 基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Python数据类型和变量</title>
+      <link href="/2016/11/10/Python%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%8F%98%E9%87%8F/"/>
+      <content type="html"><![CDATA[<p>数据类型<br>计算机顾名思义就是可以做数学计算的机器，因此，计算机程序理所当然地可以处理各种数值。<br>但是，计算机能处理的远不止数值，还可以处理文本、图形、音频、视频、网页等各种各样的数据，不同的数据，需要定义不同的数据类型。在Python中，能够直接处理的数据类型有以下几种：<br>整数<br>Python可以处理任意大小的整数，当然包括负整数，在程序中的表示方法和数学上的写法一模一样，例如：1，100，-8080，0，等等。<br>计算机由于使用二进制，所以，有时候用十六进制表示整数比较方便，十六进制用0x前缀和0-9，a-f表示，例如：0xff00，0xa5b4c3d2，等等。</p><p>浮点数<br>浮点数也就是小数，之所以称为浮点数，是因为按照科学记数法表示时，一个浮点数的小数点位置是可变的，比如，1.23x109和12.3x108是完全相等的。浮点数可以用数学写法，如1.23，3.14，-9.01，等等。但是对于很大或很小的浮点数，<br>就必须用科学计数法表示，把10用e替代，1.23x109就是1.23e9，或者12.3e8，0.000012可以写成1.2e-5，等等。<br>整数和浮点数在计算机内部存储的方式是不同的，整数运算永远是精确的（除法难道也是精确的？是的！），而浮点数运算则可能会有四舍五入的误差。</p><p>字符串<br>字符串是以单引号’或双引号”括起来的任意文本，比如’abc’，”xyz”等等。请注意，’’或””本身只是一种表示方式，不是字符串的一部分，因此，字符串’abc’只有a，b，c这3个字符。如果’本身也是一个字符，那就可以用””括起来，比如”I’m OK”包含的字符是I，’，m，空格，O，K这6个字符。<br>如果字符串内部既包含’又包含”怎么办？可以用转义字符\来标识，比如：<br>‘I\’m \”OK\”!’<br>表示的字符串内容是：<br>I’m “OK”!<br>转义字符\可以转义很多字符，比如\n表示换行，\t表示制表符，字符\本身也要转义，所以\表示的字符就是\，可以在Python的交互式命令行用print()打印字符串看看：</p><blockquote><blockquote><blockquote><p>print(‘I\’m ok.’)<br>I’m ok.<br>print(‘I\’m learning\nPython.’)<br>I’m learning<br>Python.<br>print(‘\\n\‘)<br>\<br>如果字符串里面有很多字符都需要转义，就需要加很多\，为了简化，Python还允许用r’’表示’’内部的字符串默认不转义，可以自己试试：<br>print(‘\\t\‘)<br>\       \<br>print(r’\\t\‘)<br>\\t\<br>如果字符串内部有很多换行，用\n写在一行里不好阅读，为了简化，Python允许用’’’…’’’的格式表示多行内容，可以自己试试：<br>print(‘’’line1<br>… line2<br>… line3’’’)<br>line1<br>line2<br>line3<br>上面是在交互式命令行内输入，注意在输入多行内容时，提示符由&gt;&gt;&gt;变为…，提示你可以接着上一行输入，注意…是提示符，不是代码的一部分：</p></blockquote></blockquote></blockquote><p>当输入完结束符<code>`</code>和括号)后，执行该语句并打印结果。<br>│Command Prompt - python                           _ □ x │<br>├────────────────────────────────────────────────────────┤<br>│&gt;&gt;&gt; print(‘’’line1                                      │<br>│… line2                                               │<br>│… line3’’’)                                           │<br>│line1                                                   │<br>│line2                                                   │<br>│line3                                                   │<br>│                                                        │<br>│&gt;&gt;&gt; _                                                   │<br>│</p><p>如果写成程序并存为.py文件，就是：<br>print(‘’’line1<br>line2<br>line3’’’)</p><p>布尔值</p><p>布尔值和布尔代数的表示完全一致，一个布尔值只有True、False两种值，要么是True，要么是False，<br>在Python中，可以直接用True、False表示布尔值（请注意大小写），也可以通过布尔运算计算出来：</p><blockquote><blockquote><blockquote><p>True<br>True<br>False<br>False<br>3 &gt; 2<br>True<br>3 &gt; 5<br>False</p></blockquote></blockquote></blockquote><p>布尔值可以用and、or和not运算。<br>and运算是与运算，只有所有都为True，and运算结果才是True：</p><blockquote><blockquote><blockquote><p>True and True<br>True<br>True and False<br>False<br>False and False<br>False<br>5 &gt; 3 and 3 &gt; 1<br>True</p></blockquote></blockquote></blockquote><p>or运算是或运算，只要其中有一个为True，or运算结果就是True：</p><blockquote><blockquote><blockquote><p>True or True<br>True<br>True or False<br>True<br>False or False<br>False<br>5 &gt; 3 or 1 &gt; 3<br>True<br>not运算是非运算，它是一个单目运算符，把True变成False，False变成True：<br>not True<br>False<br>not False<br>True<br>not 1 &gt; 2<br>True<br>布尔值经常用在条件判断中，比如：<br>if age &gt;= 18:<br>    print(‘adult’)<br>else:<br>    print(‘teenager’)</p></blockquote></blockquote></blockquote><p> 空值</p><p>空值是Python里一个特殊的值，用None表示。None不能理解为0，因为0是有意义的，而None是一个特殊的空值。<br>此外，Python还提供了列表、字典等多种数据类型，还允许创建自定义数据类型，我们后面会继续讲到。</p><p>变量</p><p>变量的概念基本上和初中代数的方程变量是一致的，只是在计算机程序中，变量不仅可以是数字，还可以是任意数据类型。<br>变量在程序中就是用一个变量名表示了，变量名必须是大小写英文、数字和_的组合，且不能用数字开头，比如：<br>a = 1<br>变量a是一个整数。<br>t_007 = ‘T007’<br>变量t_007是一个字符串。<br>Answer = True<br>变量Answer是一个布尔值True。</p>]]></content>
+      
       <categories>
-        <category>Python</category>
+          
+          <category> Python </category>
+          
       </categories>
-      <tags>
-        <tag>基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Linux基础命令3]]></title>
-    <url>%2F2016%2F10%2F09%2FLinux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A43%2F</url>
-    <content type="text"><![CDATA[1、file命令该命令用于判断接在file命令后的文件的基本数据，因为在Linux下文件的类型并不是以后缀为分的，所以这个命令对我们来说就很有用了，它的用法非常简单，基本语法如下：file filename #例如：file ./test 2、tar命令该命令用于对文件进行打包，默认情况并不会压缩，如果指定了相应的参数，它还会调用相应的压缩程序（如gzip和bzip等）进行压缩和解压。它的常用参数如下：-c ：新建打包文件-t ：查看打包文件的内容含有哪些文件名-x ：解打包或解压缩的功能，可以搭配-C（大写）指定解压的目录，注意-c,-t,-x不能同时出现在同一条命令中-j ：通过bzip2的支持进行压缩/解压缩-z ：通过gzip的支持进行压缩/解压缩-v ：在压缩/解压缩过程中，将正在处理的文件名显示出来-f filename ：filename为要处理的文件-C dir ：指定压缩/解压缩的目录dir上面的解说可以已经让你晕过去了，但是通常我们只需要记住下面三条命令即可：压缩：tar -jcv -f filename.tar.bz2 要被处理的文件或目录名称查询：tar -jtv -f filename.tar.bz2解压：tar -jxv -f filename.tar.bz2 -C 欲解压缩的目录注：文件名并不定要以后缀tar.bz2结尾，这里主要是为了说明使用的压缩程序为bzip2 3、cat命令该命令用于查看文本文件的内容，后接要查看的文件名，通常可用管道与more和less一起使用，从而可以一页页地查看数据。例如：cat text | less # 查看text文件中的内容 注：这条命令也可以使用less text来代替4、chown命令 该命令用于改变文件的所有者，与chgrp命令的使用方法相同，只是修改的文件属性不同，不再详述。 5、chmod命令 该命令用于改变文件的权限，一般的用法如下：chmod [-R] xyz 文件或目录-R：进行递归的持续更改，即连同子目录下的所有文件都会更改同时，chmod还可以使用u（user）、g（group）、o（other）、a（all）和+（加入）、-（删除）、=（设置）跟rwx搭配来对文件的权限进行更改。chmod 0755 file # 把file的文件权限改变为-rxwr-xr-xchmod g+w file # 向file的文件权限中加入用户组可写权限 6、vim命令 该命令主要用于文本编辑，它接一个或多个文件名作为参数，如果文件存在就打开，如果文件不存在就以该文件名创建一个文件。vim是一个非常好用的文本编辑器，它里面有很多非常好用的命令，在这里不再多说。你可以从这里下载vim常用操作的详细说明。 7、gcc命令 对于一个用Linux开发C程序的人来说，这个命令就非常重要了，它用于把C语言的源程序文件，编译成可执行程序，由于g++的很多参数跟它非常相似，所以这里只介绍gcc的参数，它的常用参数如下：-o ：output之意，用于指定生成一个可执行文件的文件名-c ：用于把源文件生成目标文件（.o)，并阻止编译器创建一个完整的程序-I ：增加编译时搜索头文件的路径-L ：增加编译时搜索静态连接库的路径-S ：把源文件生成汇编代码文件-lm：表示标准库的目录中名为libm.a的函数库-lpthread ：连接NPTL实现的线程库-std= ：用于指定把使用的C语言的版本 例如：把源文件test.c按照c99标准编译成可执行程序testgcc -o test test.c -lm -std=c99 #把源文件test.c转换为相应的汇编程序源文件test.sgcc -S test.c 8、time命令 该命令用于测算一个命令（即程序）的执行时间。它的使用非常简单，就像平时输入命令一样，不过在命令的前面加入一个time即可，例如：time ./processtime ps aux 在程序或命令运行结束后，在最后输出了三个时间，它们分别是：user：用户CPU时间，命令执行完成花费的用户CPU时间，即命令在用户态中执行时间总和；system：系统CPU时间，命令执行完成花费的系统CPU时间，即命令在核心态中执行时间总和；real：实际时间，从command命令行开始执行到运行终止的消逝时间；]]></content>
+      
+      
+        <tags>
+            
+            <tag> 基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Python基础</title>
+      <link href="/2016/11/09/Python%E5%9F%BA%E7%A1%80/"/>
+      <content type="html"><![CDATA[<p>python简介：<br>Python是一种计算机程序设计语言。你可能已经听说过很多种流行的编程语言，比如非常难学的C语言，非常流行的Java语言，适合初学者的Basic语言，适合网页编程的JavaScript语言等等。<br>那Python是一种什么语言？<br>首先，我们普及一下编程语言的基础知识。用任何编程语言来开发程序，都是为了让计算机干活，比如下载一个MP3，编写一个文档等等，而计算机干活的CPU只认识机器指令，所以，尽管不同的编程语言差异极大，最后都得“翻译”成CPU可以执行的机器指令。而不同的编程语言，干同一个活，编写的代码量，差距也很大。<br>比如，完成同一个任务，C语言要写1000行代码，Java只需要写100行，而Python可能只要20行。<br>所以Python是一种相当高级的语言。<br>你也许会问，代码少还不好？代码少的代价是运行速度慢，C程序运行1秒钟，Java程序可能需要2秒，而Python程序可能就需要10秒。<br>那是不是越低级的程序越难学，越高级的程序越简单？表面上来说，是的，但是，在非常高的抽象计算中，高级的Python程序设计也是非常难学的，所以，高级程序语言不等于简单。<br>但是，对于初学者和完成普通任务，Python语言是非常简单易用的。连Google都在大规模使用Python，你就不用担心学了会没用。<br>用Python可以做什么？可以做日常任务，比如自动备份你的MP3；可以做网站，很多著名的网站包括YouTube就是Python写的；可以做网络游戏的后台，很多在线游戏的后台都是Python开发的。<br>总之就是能干很多很多事啦。</p><p>安装python：</p><p>因为Python是跨平台的，它可以运行在Windows、Mac和各种Linux/Unix系统上。在Windows上写Python程序，放到Linux上也是能够运行的。<br>要开始学习Python编程，首先就得把Python安装到你的电脑里。安装后，你会得到Python解释器（就是负责运行Python程序的），一个命令行交互环境，还有一个简单的集成开发环境。<br>安装Python 3.6<br>目前，Python有两个版本，一个是2.x版，一个是3.x版，这两个版本是不兼容的。由于3.x版越来越普及，我们的教程将以最新的Python 3.6版本为基础。<br>请确保你的电脑上安装的Python版本是最新的3.6.x，这样，你才能无痛学习这个教程。<br>在Linux上安装Python</p><p>如果你正在使用Linux，那我可以假定你有Linux系统管理经验，自行安装Python 3应该没有问题，否则，请换回Windows系统。<br>对于大量的目前仍在使用Windows的同学，如果短期内没有打算换Mac，就可以继续阅读以下内容。</p><p>在Mac上安装Python<br>如果你正在使用Mac，系统是OS X 10.8~10.10，那么系统自带的Python版本是2.7。要安装最新的Python 3.6，有两个方法：<br>方法一：从Python官网下载Python 3.6的安装程序（网速慢的同学请移步国内镜像），双击运行并安装；<br>方法二：如果安装了Homebrew，直接通过命令brew install python3安装即可。</p><p>在Windows上安装Python</p><p>首先，根据你的Windows版本（64位还是32位）从Python的官方网站下载Python 3.6对应的64位安装程序或32位安装程序（网速慢的同学请移步国内镜像），<br>然后，运行下载的EXE安装包：<br><img src="/img/q.png" alt=""><br>特别要注意勾上Add Python 3.6 to PATH，然后点“Install Now”即可完成安装。<br>运行Python<br>安装成功后，打开命令提示符窗口，敲入python后，会出现两种情况：<br>情况一：<br><img src="/img/w.png" alt=""><br>看到上面的画面，就说明Python安装成功！<br>你看到提示符&gt;&gt;&gt;就表示我们已经在Python交互式环境中了，可以输入任何Python代码，<br>回车后会立刻得到执行结果。现在，输入exit()并回车，就可以退出Python交互式环境（直接关掉命令行窗口也可以）。<br>情况二：得到一个错误：<br>‘python’ 不是内部或外部命令，也不是可运行的程序或批处理文件。<br><img src="/img/e.png" alt=""><br>这是因为Windows会根据一个Path的环境变量设定的路径去查找python.exe，如果没找到，就会报错。如果在安装时漏掉了勾选Add Python 3.6 to PATH，那就要手动把python.exe所在的路径添加到Path中。<br>如果你不知道怎么修改环境变量，建议把Python安装程序重新运行一遍，务必记得勾上Add Python 3.6 to PATH。</p><p>小结</p><p>学会如何把Python安装到计算机中，并且熟练打开和退出Python交互式环境。</p><p>在Windows上运行Python时，请先启动命令行，然后运行python。</p><p>在Mac和Linux上运行Python时，请打开终端，然后运行python3。</p>]]></content>
+      
       <categories>
-        <category>linux</category>
+          
+          <category> Python </category>
+          
       </categories>
-      <tags>
-        <tag>基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[linux基础命令2]]></title>
-    <url>%2F2016%2F10%2F08%2Flinux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A42%2F</url>
-    <content type="text"><![CDATA[1、mv命令该命令用于移动文件、目录或更名，move之意，它的常用参数如下：-f ：force强制的意思，如果目标文件已经存在，不会询问而直接覆盖-i ：若目标文件已经存在，就会询问是否覆盖-u ：若目标文件已经存在，且比目标文件新，才会更新 注：该命令可以把一个文件或多个文件一次移动一个文件夹中，但是最后一个目标文件一定要是“目录”。例如：mv file1 file2 file3 dir # 把文件file1、file2、file3移动到目录dir中mv file1 file2 # 把文件file1重命名为file2 2、rm命令（谨慎使用） 该命令用于删除文件或目录，remove之间，它的常用参数如下：-f ：就是force的意思，忽略不存在的文件，不会出现警告消息-i ：互动模式，在删除前会询问用户是否操作-r ：递归删除，最常用于目录删除，它是一个非常危险的参数 例如rm -i file # 删除文件file，在删除之前会询问是否进行该操作rm -fr dir # 强制删除目录dir中的所有文件 3、ps命令该命令用于将某个时间点的进程运行情况选取下来并输出，process之意，它的常用参数如下：-A ：所有的进程均显示出来-a ：不与terminal有关的所有进程-u ：有效用户的相关进程-x ：一般与a参数一起使用，可列出较完整的信息-l ：较长，较详细地将PID的信息列出 其实我们只要记住ps一般使用的命令参数搭配即可，它们并不多，如下：ps aux # 查看系统所有的进程数据ps ax # 查看不与terminal有关的所有进程ps -lA # 查看系统所有的进程数据ps axjf # 查看连同一部分进程树状态 4、kill命令 该命令用于向某个工作（%jobnumber）或者是某个PID（数字）传送一个信号，它通常与ps和jobs命令一起使用，它的基本语法如下：kill -signal PID signal的常用参数如下： 注：最前面的数字为信号的代号，使用时可以用代号代替相应的信号。 5、killall命令 该命令用于向一个命令启动的进程发送一个信号，它的一般语法如下：killall [-iIe] [command name]它的参数如下：-i ：交互式的意思，若需要删除时，会询问用户-e ：表示后面接的command name要一致，但command name不能超过15个字符-I ：命令名称忽略大小写 例如：killall -SIGHUP syslogd # 重新启动syslogd]]></content>
+      
+      
+        <tags>
+            
+            <tag> 基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Linux基础命令3</title>
+      <link href="/2016/10/09/Linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A43/"/>
+      <content type="html"><![CDATA[<p>1、file命令<br>该命令用于判断接在file命令后的文件的基本数据，因为在Linux下文件的类型并不是以后缀为分的，<br>所以这个命令对我们来说就很有用了，它的用法非常简单，基本语法如下：<br>file filename</p><p>#例如：<br>file ./test</p><p>2、tar命令<br>该命令用于对文件进行打包，默认情况并不会压缩，如果指定了相应的参数，<br>它还会调用相应的压缩程序（如gzip和bzip等）进行压缩和解压。它的常用参数如下：<br>-c ：新建打包文件<br>-t ：查看打包文件的内容含有哪些文件名<br>-x ：解打包或解压缩的功能，可以搭配-C（大写）指定解压的目录，注意-c,-t,-x不能同时出现在同一条命令中<br>-j ：通过bzip2的支持进行压缩/解压缩<br>-z ：通过gzip的支持进行压缩/解压缩<br>-v ：在压缩/解压缩过程中，将正在处理的文件名显示出来<br>-f filename ：filename为要处理的文件<br>-C dir ：指定压缩/解压缩的目录dir<br>上面的解说可以已经让你晕过去了，但是通常我们只需要记住下面三条命令即可：<br>压缩：tar -jcv -f filename.tar.bz2 要被处理的文件或目录名称<br>查询：tar -jtv -f filename.tar.bz2<br>解压：tar -jxv -f filename.tar.bz2 -C 欲解压缩的目录<br>注：文件名并不定要以后缀tar.bz2结尾，这里主要是为了说明使用的压缩程序为bzip2</p><p>3、cat命令<br>该命令用于查看文本文件的内容，后接要查看的文件名，<br>通常可用管道与more和less一起使用，从而可以一页页地查看数据。例如：<br>cat text | less # 查看text文件中的内容</p><h1 id="注：这条命令也可以使用less-text来代替"><a href="#注：这条命令也可以使用less-text来代替" class="headerlink" title="注：这条命令也可以使用less text来代替"></a>注：这条命令也可以使用less text来代替</h1><p>4、chown命令</p><p>该命令用于改变文件的所有者，与chgrp命令的使用方法相同，只是修改的文件属性不同，不再详述。</p><p>5、chmod命令</p><p>该命令用于改变文件的权限，一般的用法如下：<br>chmod [-R] xyz 文件或目录<br>-R：进行递归的持续更改，即连同子目录下的所有文件都会更改<br>同时，chmod还可以使用u（user）、g（group）、o（other）、a（all）和+（加入）、-（删除）、=（设置）跟rwx搭配来对文件的权限进行更改。<br>chmod 0755 file # 把file的文件权限改变为-rxwr-xr-x<br>chmod g+w file # 向file的文件权限中加入用户组可写权限</p><p>6、vim命令</p><p>该命令主要用于文本编辑，它接一个或多个文件名作为参数，如果文件存在就打开，如果文件不存在就以该文件名创建一个文件。vim是一个非常好用的文本编辑器，它里面有很多非常好用的命令，<br>在这里不再多说。你可以从这里下载vim常用操作的详细说明。</p><p>7、gcc命令</p><p>对于一个用Linux开发C程序的人来说，这个命令就非常重要了，它用于把C语言的源程序文件，编译成可执行程序，由于g++的很多参数跟它非常相似，<br>所以这里只介绍gcc的参数，它的常用参数如下：<br>-o ：output之意，用于指定生成一个可执行文件的文件名<br>-c ：用于把源文件生成目标文件（.o)，并阻止编译器创建一个完整的程序<br>-I ：增加编译时搜索头文件的路径<br>-L ：增加编译时搜索静态连接库的路径<br>-S ：把源文件生成汇编代码文件<br>-lm：表示标准库的目录中名为libm.a的函数库<br>-lpthread ：连接NPTL实现的线程库<br>-std= ：用于指定把使用的C语言的版本</p><h1 id="例如："><a href="#例如：" class="headerlink" title="例如："></a>例如：</h1><h1 id="把源文件test-c按照c99标准编译成可执行程序test"><a href="#把源文件test-c按照c99标准编译成可执行程序test" class="headerlink" title="把源文件test.c按照c99标准编译成可执行程序test"></a>把源文件test.c按照c99标准编译成可执行程序test</h1><p>gcc -o test test.c -lm -std=c99</p><p>#把源文件test.c转换为相应的汇编程序源文件test.s<br>gcc -S test.c</p><p>8、time命令</p><p>该命令用于测算一个命令（即程序）的执行时间。<br>它的使用非常简单，就像平时输入命令一样，不过在命令的前面加入一个time即可，例如：<br>time ./process<br>time ps aux</p><p>在程序或命令运行结束后，在最后输出了三个时间，它们分别是：<br>user：用户CPU时间，命令执行完成花费的用户CPU时间，即命令在用户态中执行时间总和；<br>system：系统CPU时间，命令执行完成花费的系统CPU时间，即命令在核心态中执行时间总和；<br>real：实际时间，从command命令行开始执行到运行终止的消逝时间；</p>]]></content>
+      
       <categories>
-        <category>linux</category>
+          
+          <category> linux </category>
+          
       </categories>
-      <tags>
-        <tag>基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Linux基础]]></title>
-    <url>%2F2016%2F10%2F07%2FLinux%E5%9F%BA%E7%A1%80%2F</url>
-    <content type="text"><![CDATA[1、cd命令这是一个非常基本，也是大家经常需要使用的命令，它用于切换当前目录，它的参数是要切换到的目录的路径，可以是绝对路径，也可以是相对路径。如cd /root/Docements # 切换到目录/root/Docementscd ./path # 切换到当前目录下的path目录中，“.”表示当前目录cd ../path # 切换到上层目录中的path目录中，“..”表示上一层目录 2、ls命令这是一个非常有用的查看文件与目录的命令，list之意，它的参数非常多，下面就列出一些我常用的参数吧，如下：-l ：列出长数据串，包含文件的属性与权限数据等-a ：列出全部的文件，连同隐藏文件（开头为.的文件）一起列出来（常用）-d ：仅列出目录本身，而不是列出目录的文件数据-h ：将文件容量以较易读的方式（GB，kB等）列出来-R ：连同子目录的内容一起列出（递归列出），等于该目录下的所有文件都会显示出来3、grep命令 该命令常用于分析一行的信息，若当中有我们所需要的信息，就将该行显示出来，该命令通常与管道命令一起使用，用于对一些命令的输出进行筛选加工等等，它的简单语法为grep [-acinv] [–color=auto] ‘查找字符串’ filename它的常用参数如下：-a ：将binary文件以text文件的方式查找数据-c ：计算找到‘查找字符串’的次数-i ：忽略大小写的区别，即把大小写视为相同-v ：反向选择，即显示出没有‘查找字符串’内容的那一行 例如：取出文件/etc/man.config中包含MANPATH的行，并把找到的关键字加上颜色grep –color=auto ‘MANPATH’ /etc/man.config 把ls -l的输出中包含字母file（不区分大小写）的内容输出ls -l | grep -i file 4、find命令 find是一个基于查找的功能非常强大的命令，相对而言，它的使用也相对较为复杂，参数也比较多，所以在这里将给把它们分类列出，它的基本语法如下：find [PATH] [option] [action] 与时间有关的参数：-mtime n : n为数字，意思为在n天之前的“一天内”被更改过的文件；-mtime +n : 列出在n天之前（不含n天本身）被更改过的文件名；-mtime -n : 列出在n天之内（含n天本身）被更改过的文件名；-newer file : 列出比file还要新的文件名 例如：find /root -mtime 0 # 在当前目录下查找今天之内有改动的文件 与用户或用户组名有关的参数：-user name : 列出文件所有者为name的文件-group name : 列出文件所属用户组为name的文件-uid n : 列出文件所有者为用户ID为n的文件-gid n : 列出文件所属用户组为用户组ID为n的文件 例如：find /home/ljianhui -user ljianhui # 在目录/home/ljianhui中找出所有者为ljianhui的文件 与文件权限及名称有关的参数：-name filename ：找出文件名为filename的文件-size [+-]SIZE ：找出比SIZE还要大（+）或小（-）的文件-tpye TYPE ：查找文件的类型为TYPE的文件，TYPE的值主要有：一般文件（f)、设备文件（b、c）、 目录（d）、连接文件（l）、socket（s）、FIFO管道文件（p）；-perm mode ：查找文件权限刚好等于mode的文件，mode用数字表示，如0755；-perm -mode ：查找文件权限必须要全部包括mode权限的文件，mode用数字表示-perm +mode ：查找文件权限包含任一mode的权限的文件，mode用数字表示 例如：find / -name passwd # 查找文件名为passwd的文件find . -perm 0755 # 查找当前目录中文件权限的0755的文件find . -size +12k # 查找当前目录中大于12KB的文件，注意c表示byte 5、cp命令该命令用于复制文件，copy之意，它还可以把多个文件一次性地复制到一个目录下，它的常用参数如下：-a ：将文件的特性一起复制-p ：连同文件的属性一起复制，而非使用默认方式，与-a相似，常用于备份-i ：若目标文件已经存在时，在覆盖时会先询问操作的进行-r ：递归持续复制，用于目录的复制行为-u ：目标文件与源文件有差异时才会复制]]></content>
+      
+      
+        <tags>
+            
+            <tag> 基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>linux基础命令2</title>
+      <link href="/2016/10/08/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A42/"/>
+      <content type="html"><![CDATA[<p>1、mv命令<br>该命令用于移动文件、目录或更名，move之意，它的常用参数如下：<br>-f ：force强制的意思，如果目标文件已经存在，不会询问而直接覆盖<br>-i ：若目标文件已经存在，就会询问是否覆盖<br>-u ：若目标文件已经存在，且比目标文件新，才会更新</p><p>注：该命令可以把一个文件或多个文件一次移动一个文件夹中，但是最后一个目标文件一定要是“目录”。<br>例如：<br>mv file1 file2 file3 dir # 把文件file1、file2、file3移动到目录dir中<br>mv file1 file2 # 把文件file1重命名为file2</p><p>2、rm命令（谨慎使用）</p><p>该命令用于删除文件或目录，remove之间，它的常用参数如下：<br>-f ：就是force的意思，忽略不存在的文件，不会出现警告消息<br>-i ：互动模式，在删除前会询问用户是否操作<br>-r ：递归删除，最常用于目录删除，它是一个非常危险的参数</p><p>例如<br>rm -i file # 删除文件file，在删除之前会询问是否进行该操作<br>rm -fr dir # 强制删除目录dir中的所有文件</p><p>3、ps命令<br>该命令用于将某个时间点的进程运行情况选取下来并输出，process之意，它的常用参数如下：<br>-A ：所有的进程均显示出来<br>-a ：不与terminal有关的所有进程<br>-u ：有效用户的相关进程<br>-x ：一般与a参数一起使用，可列出较完整的信息<br>-l ：较长，较详细地将PID的信息列出</p><p>其实我们只要记住ps一般使用的命令参数搭配即可，它们并不多，如下：<br>ps aux # 查看系统所有的进程数据<br>ps ax # 查看不与terminal有关的所有进程<br>ps -lA # 查看系统所有的进程数据<br>ps axjf # 查看连同一部分进程树状态</p><p>4、kill命令</p><p>该命令用于向某个工作（%jobnumber）或者是某个PID（数字）传送一个信号，<br>它通常与ps和jobs命令一起使用，它的基本语法如下：<br>kill -signal PID</p><p>signal的常用参数如下：</p><p>注：最前面的数字为信号的代号，使用时可以用代号代替相应的信号。</p><p>5、killall命令</p><p>该命令用于向一个命令启动的进程发送一个信号，它的一般语法如下：<br>killall [-iIe] [command name]<br>它的参数如下：<br>-i ：交互式的意思，若需要删除时，会询问用户<br>-e ：表示后面接的command name要一致，但command name不能超过15个字符<br>-I ：命令名称忽略大小写</p><h1 id="例如："><a href="#例如：" class="headerlink" title="例如："></a>例如：</h1><p>killall -SIGHUP syslogd # 重新启动syslogd</p>]]></content>
+      
       <categories>
-        <category>linux</category>
+          
+          <category> linux </category>
+          
       </categories>
-      <tags>
-        <tag>基础</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> 基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Linux基础</title>
+      <link href="/2016/10/07/Linux%E5%9F%BA%E7%A1%80/"/>
+      <content type="html"><![CDATA[<p>1、cd命令<br>这是一个非常基本，也是大家经常需要使用的命令，它用于切换当前目录，它的参数是要切换到的目录的路径，可以是绝对路径，<br>也可以是相对路径。如<br>cd /root/Docements # 切换到目录/root/Docements<br>cd ./path          # 切换到当前目录下的path目录中，“.”表示当前目录<br>cd ../path         # 切换到上层目录中的path目录中，“..”表示上一层目录</p><p>2、ls命令<br>这是一个非常有用的查看文件与目录的命令，list之意，它的参数非常多，下面就列出一些我常用的参数吧，如下：<br>-l ：列出长数据串，包含文件的属性与权限数据等<br>-a ：列出全部的文件，连同隐藏文件（开头为.的文件）一起列出来（常用）<br>-d ：仅列出目录本身，而不是列出目录的文件数据<br>-h ：将文件容量以较易读的方式（GB，kB等）列出来<br>-R ：连同子目录的内容一起列出（递归列出），等于该目录下的所有文件都会显示出来<br>3、grep命令</p><p>该命令常用于分析一行的信息，若当中有我们所需要的信息，就将该行显示出来，该命令通常与管道命令一起使用，<br>用于对一些命令的输出进行筛选加工等等，它的简单语法为<br>grep [-acinv] [–color=auto] ‘查找字符串’ filename<br>它的常用参数如下：<br>-a ：将binary文件以text文件的方式查找数据<br>-c ：计算找到‘查找字符串’的次数<br>-i ：忽略大小写的区别，即把大小写视为相同<br>-v ：反向选择，即显示出没有‘查找字符串’内容的那一行</p><h1 id="例如："><a href="#例如：" class="headerlink" title="例如："></a>例如：</h1><h1 id="取出文件-etc-man-config中包含MANPATH的行，并把找到的关键字加上颜色"><a href="#取出文件-etc-man-config中包含MANPATH的行，并把找到的关键字加上颜色" class="headerlink" title="取出文件/etc/man.config中包含MANPATH的行，并把找到的关键字加上颜色"></a>取出文件/etc/man.config中包含MANPATH的行，并把找到的关键字加上颜色</h1><p>grep –color=auto ‘MANPATH’ /etc/man.config</p><h1 id="把ls-l的输出中包含字母file（不区分大小写）的内容输出"><a href="#把ls-l的输出中包含字母file（不区分大小写）的内容输出" class="headerlink" title="把ls -l的输出中包含字母file（不区分大小写）的内容输出"></a>把ls -l的输出中包含字母file（不区分大小写）的内容输出</h1><p>ls -l | grep -i file</p><p>4、find命令</p><p>find是一个基于查找的功能非常强大的命令，<br>相对而言，它的使用也相对较为复杂，参数也比较多，所以在这里将给把它们分类列出，它的基本语法如下：<br>find [PATH] [option] [action]</p><h1 id="与时间有关的参数："><a href="#与时间有关的参数：" class="headerlink" title="与时间有关的参数："></a>与时间有关的参数：</h1><p>-mtime n : n为数字，意思为在n天之前的“一天内”被更改过的文件；<br>-mtime +n : 列出在n天之前（不含n天本身）被更改过的文件名；<br>-mtime -n : 列出在n天之内（含n天本身）被更改过的文件名；<br>-newer file : 列出比file还要新的文件名</p><h1 id="例如：-1"><a href="#例如：-1" class="headerlink" title="例如："></a>例如：</h1><p>find /root -mtime 0 # 在当前目录下查找今天之内有改动的文件</p><h1 id="与用户或用户组名有关的参数："><a href="#与用户或用户组名有关的参数：" class="headerlink" title="与用户或用户组名有关的参数："></a>与用户或用户组名有关的参数：</h1><p>-user name : 列出文件所有者为name的文件<br>-group name : 列出文件所属用户组为name的文件<br>-uid n : 列出文件所有者为用户ID为n的文件<br>-gid n : 列出文件所属用户组为用户组ID为n的文件</p><h1 id="例如：-2"><a href="#例如：-2" class="headerlink" title="例如："></a>例如：</h1><p>find /home/ljianhui -user ljianhui # 在目录/home/ljianhui中找出所有者为ljianhui的文件</p><h1 id="与文件权限及名称有关的参数："><a href="#与文件权限及名称有关的参数：" class="headerlink" title="与文件权限及名称有关的参数："></a>与文件权限及名称有关的参数：</h1><p>-name filename ：找出文件名为filename的文件<br>-size [+-]SIZE ：找出比SIZE还要大（+）或小（-）的文件<br>-tpye TYPE ：查找文件的类型为TYPE的文件，TYPE的值主要有：一般文件（f)、设备文件（b、c）、<br>             目录（d）、连接文件（l）、socket（s）、FIFO管道文件（p）；<br>-perm mode ：查找文件权限刚好等于mode的文件，mode用数字表示，如0755；<br>-perm -mode ：查找文件权限必须要全部包括mode权限的文件，mode用数字表示<br>-perm +mode ：查找文件权限包含任一mode的权限的文件，mode用数字表示</p><h1 id="例如：-3"><a href="#例如：-3" class="headerlink" title="例如："></a>例如：</h1><p>find / -name passwd # 查找文件名为passwd的文件<br>find . -perm 0755 # 查找当前目录中文件权限的0755的文件<br>find . -size +12k # 查找当前目录中大于12KB的文件，注意c表示byte</p><p>5、cp命令<br>该命令用于复制文件，copy之意，它还可以把多个文件一次性地复制到一个目录下，它的常用参数如下：<br>-a ：将文件的特性一起复制<br>-p ：连同文件的属性一起复制，而非使用默认方式，与-a相似，常用于备份<br>-i ：若目标文件已经存在时，在覆盖时会先询问操作的进行<br>-r ：递归持续复制，用于目录的复制行为<br>-u ：目标文件与源文件有差异时才会复制</p>]]></content>
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>你好，hexo</title>
+      <link href="/2016/10/07/%E4%BD%A0%E5%A5%BD%EF%BC%8Chexo/"/>
+      <content type="html"><![CDATA[<p>使用hexo,是非常简单的一件事，测试文本</p>]]></content>
+      
+      <categories>
+          
+          <category> 搭建博客 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 基础 </tag>
+            
+            <tag> hexo </tag>
+            
+            <tag> github </tag>
+            
+            <tag> npm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+  
+  
 </search>
